@@ -126,7 +126,26 @@ bot.on('message', function (event) {
 
                         });
                     }
-                    
+                    else if(event.message.text.toString().indexOf('QAQ')> -1)
+                    {
+                        
+                        event.reply(JSON.stringify(event.source.getGroupMember(event.source.groupId)));
+                        //
+						 //return event.reply('母湯喔');
+                        /*
+                            request({url:"http://rate.bot.com.tw/xrt?Lang=zh-TW"}
+                            ,function(error,response,body){
+                                if(error)
+                                    return event.reply('Error');
+                                else
+                                {
+                                    var $ = cheerio.load(html)
+                                    var data = $(this).prev();
+                                    return event.reply(data.text);
+                                }
+                            });
+                        */
+                    }
                     break;
             }
             break;
