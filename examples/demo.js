@@ -128,6 +128,7 @@ bot.on('message', function (event) {
                     }
                     else if(event.message.text.toString().indexOf('匯率')> -1)
                     {
+                        var AllSite='';
                         var str = '';
                         getJSON('https://quality.data.gov.tw/dq_download_json.php?nid=11339&md5_url=f2fdbc21603c55b11aead08c84184b8f', function (error, response) {
                             response.forEach(function (e, i) {  
