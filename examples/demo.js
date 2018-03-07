@@ -128,7 +128,19 @@ bot.on('message', function (event) {
                     }
                     else if(event.message.text.toString().indexOf('匯率')> -1)
                     {
-			event.reply('母湯喔');
+                        var str = '';
+                        getJSON('https://quality.data.gov.tw/dq_download_json.php?nid=11339&md5_url=f2fdbc21603c55b11aead08c84184b8f', function (error, response) {
+                            response.forEach(function (e, i) {  
+                              str+=e[i];
+                            });
+                            if(str=='')
+                              return event.reply('找不到你搜尋的地點耶，你只能搜尋以下地區\n'+AllSite);
+                            else
+                              return event.reply(str);
+
+                        });
+                        //
+						 //return event.reply('母湯喔');
                         /*
                             request({url:"http://rate.bot.com.tw/xrt?Lang=zh-TW"}
                             ,function(error,response,body){
