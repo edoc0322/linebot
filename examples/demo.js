@@ -128,7 +128,7 @@ bot.on('message', function (event) {
                     }
                     else if(event.message.text.toString().indexOf('匯率')> -1)
                     {
-						 return event.reply('母湯喔');
+			event.reply('母湯喔');
                         /*
                             request({url:"http://rate.bot.com.tw/xrt?Lang=zh-TW"}
                             ,function(error,response,body){
