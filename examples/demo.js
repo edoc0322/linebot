@@ -127,22 +127,9 @@ bot.on('message', function (event) {
                         });
                         //return event.reply(str);
                     }
-                    else if(event.message.text.toString().indexOf('回來')>-1)
+                    else if(event.message.text.toString().indexOf('匯率')>-1)
                     {
-						 return event.reply('母湯喔');
-                        /*
-                            request({url:"http://rate.bot.com.tw/xrt?Lang=zh-TW"}
-                            ,function(error,response,body){
-                                if(error)
-                                    return event.reply('Error');
-                                else
-                                {
-                                    var $ = cheerio.load(html)
-                                    var data = $(this).prev();
-                                    return event.reply(data.text);
-                                }
-                            });
-                        */
+			    return event.reply('母湯喔');
                     }
                     break;
             }
