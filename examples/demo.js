@@ -127,7 +127,7 @@ bot.on('message', function (event) {
                         });
                         //return event.reply(str);
                     }
-                    else if(event.message.text.toString().indexOf('匯率')>-1)
+                    else if(event.message.text.toString().indexOf('回來')>-1)
                     {
 						 return event.reply('母湯喔');
                         /*
