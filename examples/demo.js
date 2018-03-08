@@ -128,23 +128,17 @@ bot.on('message', function (event) {
                     }
                     else if(event.message.text.toString().indexOf('QAQ')> -1)
                     {
-                        
-                        event.reply(JSON.stringify(event.source.getGroupMember(event.source.groupId)));
-                        //
-						 //return event.reply('母湯喔');
-                        /*
-                            request({url:"http://rate.bot.com.tw/xrt?Lang=zh-TW"}
-                            ,function(error,response,body){
-                                if(error)
-                                    return event.reply('Error');
-                                else
-                                {
-                                    var $ = cheerio.load(html)
-                                    var data = $(this).prev();
-                                    return event.reply(data.text);
-                                }
+                        var AllSite ='';
+                        var str = '';
+                        getJSON('https://tw.rter.info/capi.php', function (error, response) {
+                            response.forEach(function (e, i) {  
+                                  AllSite+='['+i.toString()+'] '+e.Exrate +' - ' +  e.UTC+'\n';
                             });
-                        */
+                            if(str=='')
+                              return event.reply('找不到你搜尋的地點耶，你只能搜尋以下地區\n'+AllSite);
+                            else
+                              return event.reply(str);
+                        });
                     }
                     break;
             }
