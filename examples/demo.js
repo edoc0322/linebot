@@ -131,6 +131,8 @@ bot.on('message', function (event) {
                         var AllSite ='';
                         var str = '';
                         getJSON('https://tw.rter.info/capi.php', function (error, response) {
+                            if(error)
+                                str='錯誤';
                             response.forEach(function (e, i) {  
                                   AllSite+='['+i.toString()+'] '+'\n';
                             });
