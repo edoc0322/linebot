@@ -132,7 +132,7 @@ bot.on('message', function (event) {
                         var str = '';
                         getJSON('https://tw.rter.info/capi.php', function (error, response) {
                             response.forEach(function (e, i) {  
-                                  AllSite+='['+i.toString()+'] '+e.Exrate +' - ' +  e.UTC+'\n';
+                                  AllSite+='['+i.toString()+'] '+'\n';
                             });
                             if(str=='')
                               return event.reply('找不到你搜尋的地點耶，你只能搜尋以下地區\n'+AllSite);
