@@ -87,6 +87,10 @@ bot.on('message', function (event) {
                             }
                         });
                     }
+                    else if(event.message.text.toString().indexOf('遊戲列表')> -1)
+                    {
+                       return event.reply('https://forum.gamer.com.tw/C.php?bsn=31587&snA=106&tnum=32');
+                    }
                     else if(event.message.text.toString().indexOf('空氣')> -1)
                     {
                         var AllSite ='';
@@ -126,22 +130,22 @@ bot.on('message', function (event) {
 
                         });
                     }
-                    else if(event.message.text.toString().indexOf('QAQ')> -1)
-                    {
-                        var AllSite ='';
-                        var str = '';
-                        getJSON('https://tw.rter.info/capi.php', function (error, response) {
-                            if(error)
-                                str='錯誤';
-                            response.forEach(function (e, i) {  
-                                  AllSite+='['+i.toString()+'] '+'\n';
-                            });
-                            if(str=='')
-                              return event.reply('找不到你搜尋的地點耶，你只能搜尋以下地區\n'+AllSite);
-                            else
-                              return event.reply(str);
-                        });
-                    }
+                    //else if(event.message.text.toString().indexOf('QAQ')> -1)
+                    //{
+                    //    var AllSite ='';
+                    //    var str = '';
+                    //    getJSON('https://tw.rter.info/capi.php', function (error, response) {
+                    //        if(error)
+                    //            str='錯誤';
+                    //        response.forEach(function (e, i) {  
+                    //              AllSite+='['+i.toString()+'] '+'\n';
+                    //        });
+                    //        if(str=='')
+                    //          return event.reply('找不到你搜尋的地點耶，你只能搜尋以下地區\n'+AllSite);
+                    //        else
+                    //          return event.reply(str);
+                    //    });
+                    //}
                     break;
             }
             break;
