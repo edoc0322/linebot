@@ -83,13 +83,13 @@ bot.on('message', function (event) {
                     if (event.message.text.toString().indexOf('測試') > -1) {
                         event.source.profile().then(function (profile) {
                             if (profile.displayName == '吳蔡宏') {
-                                return event.reply('Hello ' + profile.displayName + ' 你剛qq剛Q說  ' + event.message.text.toString() + ' 嗎？');
+                                return event.reply('Hello ' + profile.displayName + ' 你剛剛說  ' + event.message.text.toString() + ' 嗎？');
                             }
                         });
                     }
                     else if(event.message.text.toString().indexOf('遊戲列表')> -1)
                     {
-                       return event.reply('網址');
+                       return event.reply('https://forum.gamer.com.tw/C.php?bsn=31587&snA=106&tnum=32');
                     }
                     else if(event.message.text.toString().indexOf('空氣')> -1)
                     {
