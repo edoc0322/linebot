@@ -100,23 +100,23 @@ bot.on('message', function (event) {
       {
         thumbnailImageUrl: 'https://i2.kknews.cc/SIG=mi024v/106o0007r62qp00s60n5.jpg',
         imageBackgroundColor: '#a8e8fb',
-        title: '比價一下(這行比較粗)',
+        title: '比價一下 這行比較粗',
         text: '',
         defaultAction: {
           type: 'message',
           label: '點到圖片或標題',
-          text: 'http://eshop-checker.xyz/beta/#/'
+          text: '0'
         },
         actions: [
           {
             type: 'message',
-            label: 'eShop-Checker',
-            text: 'http://eshop-checker.xyz/beta/#/'
+            label: 'eShopChecker',
+            text: '1'
           },
           {
             type: 'message',
-            label: 'eShop 比價速查網',
-            text: 'https://eshoplist.gameqb.net/'
+            label: 'eShop比價速查網',
+            text: '3'
           }
         ]
       }
