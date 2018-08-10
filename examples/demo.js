@@ -91,7 +91,7 @@ bot.on('message', function (event) {
                     {
                         return event.reply({
   type: 'template',
-  altText: '在不支援顯示樣板的地方顯示的文字',
+  altText: '你壞掉了',
   template: {
     type: 'carousel',
     imageAspectRatio: 'rectangle',
