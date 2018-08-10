@@ -89,7 +89,7 @@ bot.on('message', function (event) {
                     }
                     else if(event.message.text.toString().indexOf('遊戲比價')> -1)
                     {
-                    return event.reply([{  "type": "template",  "altText": "在不支援顯示樣板的地方顯示的文字",  "template": {    "type": "buttons",    "text": "標題文字",    "actions": [      {        "type": "message",        "label": "第一個按鈕",        "text": "1"      },      {        "type": "message",        "label": "第二個按鈕",        "text": "2"      },      {        "type": "message",        "label": "第三個按鈕",        "text": "3"      },      {        "type": "message",        "label": "第四個按鈕",        "text": "4"      }    ]  }}]);
+                    return event.reply('壞掉了');
                     }
                     else if(event.message.text.toString().indexOf('遊戲列表')> -1)
                     {
