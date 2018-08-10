@@ -87,6 +87,42 @@ bot.on('message', function (event) {
                             }
                         });
                     }
+                    else if(event.message.text.toString().indexOf('派對遊戲')> -1)
+                    {
+                        return event.reply({
+  type: 'template',
+  altText: '你壞掉了',
+  template: {
+    type: 'image_carousel',
+    columns: [
+      {
+        imageUrl: 'https://steamcdn-a.akamaihd.net/steam/apps/448510/header.jpg?t=1512143044',
+        action: {
+          type: 'uri',
+          label: 'Overcooked',
+          uri: 'https://buy.gamer.com.tw/atmItem.php?sn=21803'
+        }
+      },
+      {
+        imageUrl: 'https://steamcdn-a.akamaihd.net/steam/apps/728880/header.jpg?t=1533673144',
+        action: {
+          type: 'uri',
+          label: 'Overcooked2',
+          uri: 'https://www.youtube.com/watch?v=P2pLHYDd7no'
+        }
+      },
+	  {
+        imageUrl: 'https://p2.bahamut.com.tw/B/2KU/06/0001618406.JPG',
+        action: {
+          type: 'uri',
+          label: '瑪莉歐賽車8',
+          uri: 'https://buy.gamer.com.tw/atmItem.php?sn=23714'
+        }
+      }
+    ]
+  }
+});
+                    }
                     else if(event.message.text.toString().indexOf('遊戲比價')> -1)
                     {
                         return event.reply({
