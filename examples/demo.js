@@ -98,10 +98,10 @@ bot.on('message', function (event) {
     imageSize: 'contain',
     columns: [
       {
-        thumbnailImageUrl: 'https://www.google.com.tw/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjP6KnskOLcAhXO3VMKHXT-B-4QjRx6BAgBEAU&url=https%3A%2F%2Fkknews.cc%2Fcomic%2Fe9a93lz.html&psig=AOvVaw0MeGqdUkWW3eQz-hFid6R_&ust=1533978353024844',
+        thumbnailImageUrl: 'https://i2.kknews.cc/SIG=mi024v/106o0007r62qp00s60n5.jpg',
         imageBackgroundColor: '#a8e8fb',
-        title: '更粗的標題',
-        text: '第一組標題',
+        title: '比價一下(這行比較粗)',
+        text: '',
         defaultAction: {
           type: 'message',
           label: '點到圖片或標題',
@@ -110,13 +110,13 @@ bot.on('message', function (event) {
         actions: [
           {
             type: 'message',
-            label: '第一個按鈕',
-            text: '1'
+            label: 'eShop-Checker',
+            uri: 'http://eshop-checker.xyz/beta/#/'
           },
           {
             type: 'message',
-            label: '第二個按鈕',
-            text: '2'
+            label: 'eShop 比價速查網',
+            uri: 'https://eshoplist.gameqb.net/'
           }
         ]
       }
