@@ -103,20 +103,20 @@ bot.on('message', function (event) {
         title: '比價一下 這行比較粗',
         text: '01',
         defaultAction: {
-          type: 'message',
+          type: 'uri',
           label: '點到圖片或標題',
-          text: '0'
+          uri: 'http://eshop-checker.xyz/beta/#/'
         },
         actions: [
           {
-            type: 'message',
+            type: 'uri',
             label: 'eShopChecker',
-            text: '1'
+            uri: 'http://eshop-checker.xyz/beta/#/'
           },
           {
-            type: 'message',
+            type: 'uri',
             label: 'eShop比價速查網',
-            text: '3'
+            uri: 'https://eshoplist.gameqb.net/'
           }
         ]
       }
