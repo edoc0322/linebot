@@ -100,8 +100,8 @@ bot.on('message', function (event) {
       {
         thumbnailImageUrl: 'https://www.google.com.tw/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjP6KnskOLcAhXO3VMKHXT-B-4QjRx6BAgBEAU&url=https%3A%2F%2Fkknews.cc%2Fcomic%2Fe9a93lz.html&psig=AOvVaw0MeGqdUkWW3eQz-hFid6R_&ust=1533978353024844',
         imageBackgroundColor: '#a8e8fb',
-        title: '比價一下 這行比較粗',
-        text: '01',
+        title: '比價一下(數位版)',
+        text: '要注意海外手續費~',
         defaultAction: {
           type: 'uri',
           label: '點到圖片或標題',
