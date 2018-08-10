@@ -87,6 +87,10 @@ bot.on('message', function (event) {
                             }
                         });
                     }
+                    else if(event.message.text.toString().indexOf('遊戲比價')> -1)
+                    {
+                    return event.reply([{'type': 'template','altText': '在不支援顯示樣板的地方顯示的文字','template': {'type': 'carousel','imageAspectRatio': 'rectangle','imageSize': 'contain','columns': [{'thumbnailImageUrl': '圖片網址','imageBackgroundColor': '#a8e8fb','title': '更粗的標題','text': '第一組標題','defaultAction': {          'type': 'message',          'label': '點到圖片或標題',          'text': '0'        },        'actions': [          {            'type': 'message',            'label': '第一個按鈕',            'text': '1'          },          {            'type': 'message',            'label': '第二個按鈕',            'text': '2'          },          {            'type': 'message',            'label': '第三個按鈕',            'text': '3'          }        ]      },      {        'thumbnailImageUrl': '圖片網址','imageBackgroundColor': '#a8e8fb','title': '更粗的標題','text': '第二組標題','defaultAction': {'type': 'message','label': '點到圖片或標題',         'text': '0'        },        'actions': [          {            'type': 'message',            'label': '第一個按鈕',            'text': '1'          },          {            'type': 'message',            'label': '第二個按鈕',            'text': '2'          },          {            'type': 'message',            'label': '第三個按鈕',            'text': '3'          }        ]      }    ]  );
+                    }
                     else if(event.message.text.toString().indexOf('遊戲列表')> -1)
                     {
                        return event.reply(  [{'type':'uri','label':'按鈕顯示的文字','uri':'https://forum.gamer.com.tw/C.php?bsn=31587&snA=106&tnum=32'}]);
