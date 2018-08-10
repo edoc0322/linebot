@@ -46,7 +46,7 @@ bot.on('message', function (event) {
                     });
                     break;
                 case 'Push':
-                    bot.push('U17448c796a01b715d293c34810985a4c', ['Hey!', 'สวัสดี ' + String.fromCharCode(0xD83D, 0xDE01)]);
+                    bot.push('U17448c796a01b715d293c34810985a4c', ['Hey!', '' + String.fromCharCode(0xD83D, 0xDE01)]);
                     break;
                 case 'Push2':
                     bot.push('Cba71ba25dafbd6a1472c655fe22979e2', 'Push to group');
@@ -83,7 +83,7 @@ bot.on('message', function (event) {
                     if (event.message.text.toString().indexOf('測試') > -1) {
                         event.source.profile().then(function (profile) {
                             if (profile.displayName == '吳蔡宏') {
-                                return event.reply('Hello ' + profile.displayName + ' 你剛剛說  ' + event.message.text.toString() + ' 嗎？');
+                                return event.reply('Hello ' + profile.displayName + ' 你剛剛Q說  ' + event.message.text.toString() + ' 嗎？');
                             }
                         });
                     }
