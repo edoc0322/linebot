@@ -187,25 +187,25 @@ bot.on('message', function (event) {
             }
             break;
         case 'image':
-            event.source.profile().then(function (profile) {
-                event.message.content().then(function (data) {
-                    const s = data.toString('hex').substring(0, 32);
-                    return event.reply('哇!快來看 ' + profile.displayName + ' 上傳了好棒的照片耶~');
-                }).catch(function (err) {
-                    return event.reply(err.toString());
-                });
-            });
+          /* event.source.profile().then(function (profile) {
+               event.message.content().then(function (data) {
+                 const s = data.toString('hex').substring(0, 32);
+                 return event.reply('哇!快來看 ' + profile.displayName + ' 上傳了好棒的照片耶~');
+             }).catch(function (err) {
+                 return event.reply(err.toString());
+             });
+          });*/
             break;
         case 'video':
-            event.source.profile().then(function (profile) {
+           /*event.source.profile().then(function (profile) {
                 return event.reply('哇!快來看 ' + profile.displayName + ' 上傳了好棒的影片耶~');
-            });
+            });*/
             break;
         case 'audio':
-            event.reply('Nice audio!');
+           /* event.reply('Nice audio!');*/
             break;
         case 'location':
-            event.reply(['That\'s a good location!', 'Lat:' + event.message.latitude, 'Long:' + event.message.longitude]);
+            /*event.reply(['That\'s a good location!', 'Lat:' + event.message.latitude, 'Long:' + event.message.longitude]);*/
             break;
         case 'sticker':
             /*event.reply({
