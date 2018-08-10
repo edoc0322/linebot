@@ -83,7 +83,7 @@ bot.on('message', function (event) {
                     if (event.message.text.toString().indexOf('測試') > -1) {
                         event.source.profile().then(function (profile) {
                             if (profile.displayName == '吳蔡宏') {
-                                return event.reply('Hello ' + profile.displayName + ' 你剛剛Q說  ' + event.message.text.toString() + ' 嗎？');
+                                return event.reply('Hello ' + profile.displayName + ' 你剛qq剛Q說  ' + event.message.text.toString() + ' 嗎？');
                             }
                         });
                     }
