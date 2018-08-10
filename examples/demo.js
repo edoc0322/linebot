@@ -89,12 +89,11 @@ bot.on('message', function (event) {
                     }
                     else if(event.message.text.toString().indexOf('遊戲比價')> -1)
                     {
-                    return event.reply('壞掉了');
+                        return event.reply('壞掉了');
                     }
                     else if(event.message.text.toString().indexOf('遊戲列表')> -1)
                     {
-                       return event.reply(  [{'type':'uri','label':'按鈕顯示的文字','uri':'https://forum.gamer.com.tw/C.php?bsn=31587&snA=106&tnum=32'}]);
-                      
+                       return event.reply('https://forum.gamer.com.tw/C.php?bsn=31587&snA=106&tnum=32');
                     }
                     else if(event.message.text.toString().indexOf('空氣')> -1)
                     {
