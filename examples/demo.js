@@ -109,12 +109,12 @@ bot.on('message', function (event) {
         },
         actions: [
           {
-            type: 'message',
+            type: 'uri',
             label: 'eShop-Checker',
             uri: 'http://eshop-checker.xyz/beta/#/'
           },
           {
-            type: 'message',
+            type: 'uri',
             label: 'eShop 比價速查網',
             uri: 'https://eshoplist.gameqb.net/'
           }
