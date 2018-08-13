@@ -96,6 +96,14 @@ bot.on('message', function (event) {
     type: 'image_carousel',
     columns: [    
       {
+        imageUrl: 'https://p2.bahamut.com.tw/B/2KU/57/4578489fb532b2a626101348e2116e55.JPG',
+        action: {
+          type: 'uri',
+          label: '任天堂明星大亂鬥(18/12/07)',
+          uri: 'https://youtu.be/FuBXBXBaqrE'
+        }
+      },
+      {
         imageUrl: 'https://p2.bahamut.com.tw/B/2KU/74/226c8650d8d8b95be3b9c1d117116si5.JPG',
         action: {
           type: 'uri',
