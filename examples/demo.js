@@ -91,7 +91,7 @@ bot.on('message', function (event) {
                     {
                         return event.reply({
   type: 'template',
-  altText: '你壞掉了',
+  altText: '派對遊戲',
   template: {
     type: 'image_carousel',
     columns: [    
@@ -143,7 +143,7 @@ bot.on('message', function (event) {
                     {
                         return event.reply({
   type: 'template',
-  altText: '你壞掉了',
+  altText: '比價網站',
   template: {
     type: 'carousel',
     imageAspectRatio: 'rectangle',
