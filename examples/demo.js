@@ -115,7 +115,7 @@ bot.on('message', function (event) {
         imageUrl: 'https://steamcdn-a.akamaihd.net/steam/apps/728880/header.jpg?t=1533673144',
         action: {
           type: 'uri',
-          label: 'Overcooked2(18/08/07)',
+          label: 'Overcooked2',
           uri: 'https://www.youtube.com/watch?v=P2pLHYDd7no'
         }
       },
