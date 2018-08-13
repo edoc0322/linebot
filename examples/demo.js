@@ -99,7 +99,7 @@ bot.on('message', function (event) {
         imageUrl: 'https://p2.bahamut.com.tw/B/2KU/74/226c8650d8d8b95be3b9c1d117116si5.JPG',
         action: {
           type: 'uri',
-          label: '瑪莉歐派對',
+          label: '瑪莉歐派對(18/10/05)',
           uri: 'https://www.youtube.com/watch?v=kqaM25S7nvo'
         }
       },
@@ -107,7 +107,7 @@ bot.on('message', function (event) {
         imageUrl: 'https://steamcdn-a.akamaihd.net/steam/apps/728880/header.jpg?t=1533673144',
         action: {
           type: 'uri',
-          label: 'Overcooked2',
+          label: 'Overcooked2(18/08/07)',
           uri: 'https://www.youtube.com/watch?v=P2pLHYDd7no'
         }
       },
